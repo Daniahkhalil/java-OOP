@@ -4,7 +4,7 @@ public class BankAccount{
     private static int  numberOfAccounts=0;
     private static double totalBalance=0;
 
-    public BankAccount {
+    public BankAccount() {
         numberOfAccounts++;
     }
 
@@ -12,8 +12,8 @@ public class BankAccount{
         return this.checkingBalance;
     }
 
-    public String getSavingsBalance(){
-        return this.savingsbalance;
+    public double getSavingBalance(){
+        return this.savingBalance;
     }
 
     public static int getNumberOfAccounts(){
@@ -57,7 +57,7 @@ public class BankAccount{
             }
         }else{
                 if(this.checkingBalance - amount >=0 ){
-                this.savingsbalance -= amount;
+                this.savingBalance -= amount;
                 totalBalance-=amount;
                 return this.savingBalance;
 
@@ -75,8 +75,8 @@ public class BankAccount{
     }
 
     public void displayCheckingAndSaving(){
-        System.out.println("Checking Balance",+this.checkingBalance);
-        System.out.println("Saving Balance",+this.savingBalance);
+        System.out.println("Checking Balance"+this.checkingBalance);
+        System.out.println("Saving Balance"+this.savingBalance);
 
     }
 

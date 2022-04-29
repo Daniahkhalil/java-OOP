@@ -8,6 +8,11 @@ public class BankAccountTest{
         // Application Simulations
         // Use this example code to test various orders' updates
        BankAccount account1=new BankAccount();
-       System.out.println()
+       account1.depositeMoney(150,"Checking");
+       System.out.println( account1.depositeMoney(150,"Checking"));
+       System.out.println( account1.withdrawMoney(150,"Checking"));
+
+
+      
     }
 }
